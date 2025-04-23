@@ -33,10 +33,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -50,19 +47,31 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDBT6ZRdIua24sPaMiB_izTeRix9zCxfig',
-    appId: '1:737715652352:web:3d91ad4590258c7f3f95e5',
-    messagingSenderId: '737715652352',
-    projectId: 'fasum-apps-123',
-    authDomain: 'fasum-apps-123.firebaseapp.com',
-    storageBucket: 'fasum-apps-123.firebasestorage.app',
+    apiKey: 'AIzaSyDokDA1lIu-Oq-jkEOdAiwECB0OAQWD9ng',
+    appId: '1:449504889748:web:c8aaee2de9c43c9b44dd81',
+    messagingSenderId: '449504889748',
+    projectId: 'fir-2-fa2f1',
+    authDomain: 'fir-2-fa2f1.firebaseapp.com',
+    storageBucket: 'fir-2-fa2f1.firebasestorage.app',
+    measurementId: 'G-PG0WG85GD8',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCIK_FCHLiV6CCkZtXkXE1Yo0NyXuDqCiY',
-    appId: '1:737715652352:android:6b20f5aa9b21d4b13f95e5',
-    messagingSenderId: '737715652352',
-    projectId: 'fasum-apps-123',
-    storageBucket: 'fasum-apps-123.firebasestorage.app',
+    apiKey: 'AIzaSyDsipQbeVqVDryT0XGVUcxAI1EZiq3ot-0',
+    appId: '1:449504889748:android:1f00ba624ad1e80b44dd81',
+    messagingSenderId: '449504889748',
+    projectId: 'fir-2-fa2f1',
+    storageBucket: 'fir-2-fa2f1.firebasestorage.app',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyDokDA1lIu-Oq-jkEOdAiwECB0OAQWD9ng',
+    appId: '1:449504889748:web:707a146b82e25d2b44dd81',
+    messagingSenderId: '449504889748',
+    projectId: 'fir-2-fa2f1',
+    authDomain: 'fir-2-fa2f1.firebaseapp.com',
+    storageBucket: 'fir-2-fa2f1.firebasestorage.app',
+    measurementId: 'G-3DM3JWXZPM',
+  );
+
 }
